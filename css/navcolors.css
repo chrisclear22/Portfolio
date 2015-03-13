@@ -77,6 +77,14 @@ h1.first{
 	padding-top: 350px;
 	color: #fff;
 	line-height: 2em;
+	padding-bottom: 40px;
+}
+h2.first{
+	font-family: arvil, sans-serif;
+	font-size: 3em;
+	color: #fff;
+	line-height: 2em;
+	padding-bottom: 40px;
 }
 h1{
 	font-size: 4em;
@@ -128,6 +136,7 @@ hr{
 	background-color: transparent;
 	border: none;
 }
+
 @font-face{
 font-family: 'blackchancery';
 src: url(../fonts/BLKCHCRY.TTF);}
@@ -151,10 +160,7 @@ src: url(../fonts/BLKCHCRY.TTF);}
 		padding-top: 20px;
 		padding-bottom: 20px
 	}
-	.img-thumbnail{
-		max-width: 260px;
-	}
-}
+
 
 
 
