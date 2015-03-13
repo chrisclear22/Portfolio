@@ -8,8 +8,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+dl, dt, dd, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
@@ -29,11 +28,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	
+	overflow-x: hidden;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -58,8 +55,8 @@ nav ul li{
     display: block;
     float: left;
     line-height: 75px;
-    font-size: 1.8em;
-    font-family: blackchancery, sans-serif;
+    font-size: 1.2em;
+    font-family: carton, sans-serif;
 }
 nav ul{
 	max-width: 80%;
@@ -75,19 +72,31 @@ nav li:last-child{
 	margin-right: 50px;
 }
 h1.first{
-	font-family: blackchancery, sans-serif;
-	font-size: 4em;
-	padding-top: 320px;
+	font-family: arvil, sans-serif;
+	font-size: 3em;
+	padding-top: 350px;
 	color: #fff;
-	line-height: 3em;
+	line-height: 2em;
 }
 h1{
 	font-size: 4em;
-	font-family: blackchancery, sans-serif;
+	font-family: arvil, sans-serif;
 	color: #000;
 	line-height: 2em;
 }
-
+h2{
+	font-family: 'Crimson Text', sans-serif;
+	font-size: 2em;
+}
+ul{
+	margin-top:1em;
+}
+.thumbnail img{
+	max-height: 264px;
+}
+.git{
+	padding-top: 10px;
+}
 #wood{
 	background:url(../backgrounds/background.png) 50% 0 fixed;
 	background-size: cover;
@@ -103,7 +112,7 @@ h1{
 }
 .main{
 	
-	max-width: 550px;
+	max-width: 520px;
 	display: block;
 	margin:auto;
 }
@@ -121,11 +130,31 @@ hr{
 }
 @font-face{
 font-family: 'blackchancery';
-src: url(../fonts/BLKCHCRY.TTF);
+src: url(../fonts/BLKCHCRY.TTF);}
+@font-face{
+	font-family: 'avril';
+	src: url(../fonts/Arvil_Sans.ttf);	
+}
+@font-face{
+	font-family: 'carton';
+	src: url(../fonts/ACarton-Slab.otf);	
+}
+@media all and (max-width: 1199px){
+	.main{
+		max-width: 450px;
+	}
+}
 
-
-
-
+@media all and (max-width: 1128px){
+	.main{
+		max-width: 450px;
+		padding-top: 20px;
+		padding-bottom: 20px
+	}
+	.img-thumbnail{
+		max-width: 260px;
+	}
+}
 
 
 
