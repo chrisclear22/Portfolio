@@ -21,6 +21,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -28,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	overflow-x: hidden;
+
 }
 
 blockquote, q {
@@ -48,7 +49,9 @@ nav{
 	background-repeat: repeat-x;
 	height: 100px;
 	margin: 0px;
-
+}
+.collapse{
+	background-color: #000;
 }
 nav ul li{
     list-style: none;
@@ -62,10 +65,8 @@ nav ul{
 	max-width: 80%;
 	margin: auto;
 }
-nav li:nth-child(2){
-	margin-left: 50px;
-}
-nav li:nth-child(n+3){
+
+div ul{
 	float: right;
 }
 nav li:last-child{
@@ -101,10 +102,11 @@ ul{
 }
 .thumbnail img{
 	max-height: 264px;
+	max-width: 380px;
 }
-.git{
-	padding-top: 10px;
-}
+
+
+
 #wood{
 	background:url(../backgrounds/background.png) 50% 0 fixed;
 	background-size: cover;
@@ -118,8 +120,19 @@ ul{
 	top:-35px;
 	position: relative;
 }
+
+#work{
+	background:url(../backgrounds/work.jpeg) 50% 0 fixed;
+	background-size: cover;
+	top:-35px;
+	position: relative;
+}
+.test{
+	clear: both;
+	position: relative;
+	bottom: 55px;
+}
 .main{
-	
 	max-width: 520px;
 	display: block;
 	margin:auto;
@@ -127,6 +140,12 @@ ul{
 hr{
 	border-top: dotted 3px;
 	font-size: 1em;
+}
+.infoimg{
+	max-width: 250px;
+	display: block;
+	margin:auto;
+	border-radius: 10px;
 }
 .container{
 	max-width: 600px;
@@ -136,7 +155,21 @@ hr{
 	background-color: transparent;
 	border: none;
 }
-
+.info{
+	padding: 10px
+}
+.pp_content{
+	border-radius: 20px;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #2385FF;
+}
+.work{
+	border-radius: 15px;
+}
+footer{
+	background-color: red;
+}
 @font-face{
 font-family: 'blackchancery';
 src: url(../fonts/BLKCHCRY.TTF);}
@@ -148,20 +181,100 @@ src: url(../fonts/BLKCHCRY.TTF);}
 	font-family: 'carton';
 	src: url(../fonts/ACarton-Slab.otf);	
 }
-@media all and (max-width: 1199px){
+@media all and (max-width: 629px){
+	img.mobile{
+		max-width: 300px;
+		padding-top: 100px;
+	}
+	img.test{
+		display:none;
+	}
+	h1.first{
+		padding-top: 40px;
+		font-size: 2em;
+	}
+	.work img{
+		max-width: 250px;
+		border-radius: 15px;
+	}
+	.hide{
+		display: none;
+	}
+			img.tools{
+		max-width: 150px;
+	}
+		.caption p.text-center{
+		font-size: .5em;
+	}
+		.caption h2.text-center{
+		font-size: 1.5em;
+	}
+	#tools h1, #work h1{
+	font-size: 2.5em;
+}
+/* prettyPhoto styling for small screens */
+.pp_pic_holder.pp_default { width: 100%!important; left: 0!important; overflow: hidden; }
+div.pp_default .pp_content_container .pp_left { padding-left: 0!important; }
+div.pp_default .pp_content_container .pp_right { padding-right: 0!important; }
+.pp_content { width: 100%!important; height: auto!important; }
+.pp_fade { width: 100%!important; height: 100%!important; }
+a.pp_expand, a.pp_contract, .pp_hoverContainer, .pp_gallery, .pp_top, .pp_bottom { display: none!important; }
+#pp_full_res img { width: 100%!important; height: auto!important; }
+.pp_details { display:none; width: 94%!important; padding-left: 3%; padding-right: 4%; padding-top: 10px; padding-bottom: 10px; background-color: #fff; margin-top: -2px!important; }
+a.pp_close { right: 10px!important; top: 10px!important; }
+}
+@media all and (min-width: 630px) and (max-width: 760px){
+	.work img{
+		max-width: 300px;
+		border-radius: 15px
+	}
+		img.tools{
+		max-width: 150px;
+	}
+
+
+}
+@media all and (min-width: 600px) and (max-width: 767px) {
+	img.main{
+		max-width: 350px;
+		padding-top: 100px;
+	}
+	img.test{
+		display:none;
+	}
+		h1.first{
+		padding-top: 50px;
+	}
+img.tools{
+		max-width: 150px;
+	}
+
+}
+@media all and (min-width: 768px) and (max-width:949px){
+	img.main{
+		max-width: 400px;
+		top: 60px;
+	}
+	img.mobile{
+		display:none;
+	}
+	.work img{
+		max-width: 350px;
+		border-radius: 15px
+	}
+	img.tools{
+		max-width: 150px;
+	}
+
+}
+@media all and (min-width:950px){
 	.main{
-		max-width: 450px;
+		max-width: 500px;
+	}
+	img.mobile{
+		display:none;
 	}
 }
-
-@media all and (max-width: 1128px){
-	.main{
-		max-width: 450px;
-		padding-top: 20px;
-		padding-bottom: 20px
-	}
-
-
 
 
 

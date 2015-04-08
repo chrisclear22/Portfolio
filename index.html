@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Christopher's Portfolio</title>
-   <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>   <link href="css/navcolors.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christopher's Portfolio</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>  
+  <link href="css/navcolors.css" rel="stylesheet">
 
    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -14,102 +16,204 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <body>
 
-	<nav>
-	<ul>
-		<li><a href="#">Tools</a></li>
-		<li><a href="#">Work</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Contact</a></li>
-	</ul>
-   <img class="main" src="_images/CHRIS_CLEAR.svg">
-</nav>
-<section id="wood" data-speed="6" data-type="background">
-<h1 class="text-center first">I think its about time we worked together!</h1>
-<h2 class="text-center first">So lets make things better!</h2>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Work</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+ <img src="_images/CHRIS-CLEAR.png" class="img-responsive main test" alt="logo">
+  </div><!-- /.container-fluid -->
+  </nav>
+
+<section id="wood" data-speed="6" data-type="background"> 
+ <img src="_images/CHRIS-CLEAR.png" class="img-responsive main mobile" alt="logo">
+
+  <h1 class="text-center first">Lets make things better!</h1>
 </section>
-<section id="tools">
-  <h1 class="text-center">Tools of the Trade</h1>
-  <div class="container">
-    <div class="row row-centered">
-      <div class="col-lg-12 col-centered col-min clearfix">
-        <hr/>
-          <p class="text-center">These are a list of tools I use during development.</p>
-        <hr/>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-3 col-md-6 col-sm-6">
-      <div class="thumbnail">
-        <img class="img-thumbnail" src="_images/sublime.png">
-        <div class="caption">
-        <h2 class="text-center">Sublime Text</h2>
-            <p class="text-center">My preferred text editor</p>
-            <p class="text-center">Multiple Add-On options</p>
-            <p class="text-center">Plethora of color themes</p>
-            <p class="text-center">Built in code validator</p>
+
+<!-- Start of Tools -->
+  <section id="tools">
+    <h1 class="text-center">Tools of the Trade</h1>
+    <div class="container">
+      <div class="row row-centered">
+        <div class="col-lg-12 col-centered col-min clearfix">
+          <hr/>
+            <p class="text-center">These are a list of tools I use during development.</p>
+          <hr/>
         </div>
       </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-6">
-      <div class="thumbnail git">
-        <img class="img-thumbnail" src="_images/github.png">
-        <div class="caption git">
-        <h2 class="text-center">GitHub</h2>
-            <p class="text-center">Subversion Control System</p>
-            <p class="text-center">Multiple Projects Stored On-line</p>
-            <p class="text-center">Collaborate with Contributers</p>
-            <p class="text-center">Roll Back to Previous Versions</p>
+    <div class="row wrap">
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <div class="thumbnail tools">
+          <img class="img-thumbnail tools" src="_images/github.png" alt="github">
+          <div class="caption git">
+          <h2 class="text-center">GitHub</h2>
+              <p class="text-center">Subversion Control System</p>
+              <p class="text-center">Multiple Projects Stored On-line</p>
+              <p class="text-center">Collaborate with Contributers</p>
+              <p class="text-center">Roll Back to Previous Versions</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <div class="thumbnail tools">
+          <img class="img-thumbnail tools" src="_images/bootstrap.png" alt="bootstrap">
+          <div class="caption">
+          <h2 class="text-center">BootStrap</h2>
+              <p class="text-center">My preferred text editor</p>
+              <p class="text-center">Multiple Add-On options</p>
+              <p class="text-center">Plethora of color themes</p>
+              <p class="text-center">Built in code validator</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <div class="thumbnail tools">
+          <img class="img-thumbnail tools" src="_images/seo.png" alt="SEO">
+          <div class="caption">
+          <h2 class="text-center">Search Engine Optimization</h2>
+              <p class="text-center">My preferred text editor</p>
+              <p class="text-center">Multiple Add-On options</p>
+              <p class="text-center">Plethora of color themes</p>
+              <p class="text-center">Built in code validator</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+        <div class="thumbnail tools">
+          <img class="img-thumbnail tools" src="_images/sublime.png" alt="Sublime Text">
+          <div class="caption">
+          <h2 class="text-center">Sublime Text</h2>
+              <p class="text-center">My preferred text editor</p>
+              <p class="text-center">Multiple Add-On options</p>
+              <p class="text-center">Plethora of color themes</p>
+              <p class="text-center">Built in code validator</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-6">
-      <div class="thumbnail">
-        <img class="img-thumbnail" src="_images/bootstrap.png">
-        <div class="caption">
-        <h2 class="text-center">BootStrap</h2>
-            <p class="text-center">My preferred text editor</p>
-            <p class="text-center">Multiple Add-On options</p>
-            <p class="text-center">Plethora of color themes</p>
-            <p class="text-center">Built in code validator</p>
+  </section>
+  <!-- End of Tools -->
+
+  <!-- Start of Work -->
+  <section id="work">
+    <h1 class="text-center">My Work</h1>
+    <div class="container">
+      <div class="row row-centered">
+        <div class="col-lg-12 col-centered col-min clearfix">
+          <hr/>
+            <p class="text-center">This is a sampling of some of the work I have done.</p>
+          <hr/>
         </div>
       </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-6">
-      <div class="thumbnail">
-        <img class="img-thumbnail" src="_images/seo.png">
-        <div class="caption">
-        <h2 class="text-center">Search Engine Optimization</h2>
-            <p class="text-center">My preferred text editor</p>
-            <p class="text-center">Multiple Add-On options</p>
-            <p class="text-center">Plethora of color themes</p>
-            <p class="text-center">Built in code validator</p>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div class="thumbnail work">
+          <a rev="text" href="#leaptrip"> <img class="img-thumbnail work img-responsive" src="_images/leaptrip.png" alt="leaptrip"></a>
+          <div class="caption">
+          <h2 class="text-center">BPA Competition Site</h2>
+          </div>
         </div>
+      </div> <!-- End Column -->
+  <div id="leaptrip" style="display:none;">
+    <h1 class="text-center">BPA Competition Site</h1>
+    <p class="info">This project was done in collaboration with two others. This site was created for the Business Professionals of America's competition. So far we have placed 1st in the state of Oklahoma and are preparing for nationals in Anaheim, California. </p>
+    <p class="info"> For this site I like to brag because I coded 95% of the entire site. My two team mates were in charge of design and project management. My job for the site was pure development. This site includes heavy PHP/MySQL, CSS, HTML, as well as two APIs we are using for Google maps and pulling in weather information for each destination. This site was also built using the Bootstrap framework. </p>
+  </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div class="thumbnail work">
+         <a href="#threedays" rev="text"> <img class="img-thumbnail work img-responsive" src="_images/threedays.png" alt="discography"></a>
+         <div class="caption">
+          <h2 class="text-center">Discography</h2>
+          </div>
+        </div>
+      </div> <!-- End Column -->
+  <div id="threedays" style="display:none">
+          <h1 class="text-center">Discography Project</h1>
+          <p class="info">This is a project I worked on in class. For this poject I was tasked with picking a band and creating a discography site for that particular band. I choose Three Days Grace simply on a whim. This project was one of the very first sites I have had to create from scratch.</p>
+          <img src="_images/daysinfo.png" class="infoimg" alt="threedays">
+          <p class="info">While working on this site I highly increased my HTML and CSS skills. For this project I also had to create a Github repository for future reference. This site was then altered by a fellow student aiming on the design and layout of the site.</p>
+          <p class="info"> Check it Out&#58; <a href="http://disc-after.dannygsmith.me/">Discography</a></p>
+        </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <div class="thumbnail work">
+         <a rev="text" href="#discog"> <img class="img-thumbnail work img-responsive" src="_images/discography.png" alt="php project"></a>
+         <div class="caption">
+          <h2 class="text-center">PHP Project</h2>
+          </div>
+        </div>
+      </div><!-- End column -->
+      <div id="discog" style="display:none">
+        <h1 class="text-center">PHP Project</h1>
+         <p class="info">This is a project I worked on in class. For this Project I was tasked with retrieving his files and then converting portions of his HTML over to PHP. This project has helped me to work with other peoples code and greatly improved my PHP skill set. </p>
+         <img src="_images/info.png" class="infoimg" alt="admin login">
+         <p class="info">The things I converted on this site is the "Albums" section. All the information in the "Albums" section is being called from a database including the content of the drop down accordion. At the moment it may look like the site is broken because there is no content in the accordion. School server is not a current version so I could not import my SQL properly. Other things I implemented include and Admin login and a minor user interface for the Admin to add albums and songs as well as edit existing ones.</p>
+         <p class="info"> Check it Out&#58; <a href="http://inetstudent1.francistuttle.com/cc0953571/discography/index.php">Trace Bundy</a></p>
       </div>
-    </div>
-  </div>
-</section>
-<section id="work">
-  <h1 class="text-center">Examples of my Work</h1>
-  <div class="container">
-    <div class="row row-centered">
-      <div class="col-lg-12 col-centered col-min clearfix">
-        <hr/>
-          <p class="text-center">This is a sampling of some of the work I have done.</p>
-        <hr/>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    
-  </div>
-</section>
+  </section>
+
+<footer>
+  &copy;2015 Christophe Clear
+</footer>
+
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+        $("a[rev^='text']").prettyPhoto();
+        theme: 'facebook'
+        }); 
+      </script>
+<script type="text/javascript">
+  jQuery(function($){
+           $( '.menu-bn' ).click(function(){
+           $('.responsive-menu').toggleClass('expand')
+           })
+        })
+</script>
+
+<script type="text/javascript">
+  jQuery(function($){
+      $( '.menu-bn' ).click(function(){
+        $('.responsive-menu').addClass('expand')
+        $('.menu-bn').addClass('btn-none')
+      })
+      
+       $( '.close-btn' ).click(function(){
+        $('.responsive-menu').removeClass('expand')
+        $('.menu-bn').removeClass('btn-none')
+      })
+    })
+ </script>
 </body>
 </html>
