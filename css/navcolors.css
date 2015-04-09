@@ -29,7 +29,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-
 }
 
 blockquote, q {
@@ -112,19 +111,17 @@ ul{
 	background-size: cover;
 	position: relative;
 	z-index: -2;
-	top:-35px;
+	margin-top: -35px
 }
 #tools{
 	background:url(../backgrounds/tools.jpg) 50% 0 fixed;
 	background-size: cover;
-	top:-35px;
 	position: relative;
 }
 
 #work{
 	background:url(../backgrounds/work.jpeg) 50% 0 fixed;
 	background-size: cover;
-	top:-35px;
 	position: relative;
 }
 .test{
@@ -169,6 +166,10 @@ hr{
 }
 footer{
 	background-color: red;
+	position: relative;
+}
+section{
+	overflow: hidden;
 }
 @font-face{
 font-family: 'blackchancery';
